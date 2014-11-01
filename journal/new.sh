@@ -1,0 +1,1 @@
+echo "=Day "`ls | wc -w`": " `date "+%Y-%m-%d\n"` >> `date "+%Y%m%d"`.md
