@@ -2,6 +2,7 @@
 // to run:
 // 	>> GOPATH=/Users/nmihalick/Projects/wake_up_and_go
 // 	>> go run pkg/github.com/shortpgh/wake_up_and_go/hello.go
+//
 package main
 
 import (

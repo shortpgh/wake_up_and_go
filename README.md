@@ -32,7 +32,9 @@ Follow the golang tutorial. This is the best place to start.
 
 === Write a Unit Test
 
-Figure out how to write a unit test.
+Figure out how to write a unit test. (This is part of the tutorial).
+
+=== 
 
 === Code Kata's Binary Search
 Write a binary search in 5 different ways (each a different day). This is a good way to learn different structural ways to create a program. It can be recursive, functional, class based, and any other method that i can think up. This also provides an introduction to a list-based data type.

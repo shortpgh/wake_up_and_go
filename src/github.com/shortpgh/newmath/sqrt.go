@@ -1,5 +1,5 @@
 // Day 2:  2014-11-02
-// 
+//
 // This is a trivial example package.
 //
 // use `go build github.com/shortpgh/newmath/sqrt.go' to build this package.
@@ -13,7 +13,7 @@ package newmath
 func Sqrt(x float64) float64 {
 	z := 1.0
 	for i := 0; i < 1000; i++ {
-		z -= (z*z - x) / (2*z)
+		z -= (z*z - x) / (2 * z)
 	}
 	return z
 }
