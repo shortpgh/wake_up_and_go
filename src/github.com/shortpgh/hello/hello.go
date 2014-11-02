@@ -4,8 +4,11 @@
 // 	>> go run pkg/github.com/shortpgh/wake_up_and_go/hello.go
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/shortpgh/newmath"
+)
 
 func main() {
-    fmt.Printf("hello, world\n")
+    fmt.Printf("hello, world! Sqrt(2) = %v\n", newmath.Sqrt(2))
 }
