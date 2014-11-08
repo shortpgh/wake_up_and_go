@@ -28,7 +28,10 @@ Yeah, it's a lame way to start if you are an experienced programmer. But when yo
 
 #### golang tutorial
 
-Follow the golang tutorial. This is the best place to start.
+Follow the golang tutorials. This is the best place to start.
+
+http://golang.org/doc/code.html
+https://tour.golang.org/
 
 #### Write a Unit Test
 
