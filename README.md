@@ -42,9 +42,13 @@ Figure out how to write a unit test. (This is part of the tutorial).
 #### Code Kata's Binary Search
 Write a binary search in 5 different ways (each a different day). This is a good way to learn different structural ways to create a program. It can be recursive, functional, class based, and any other method that i can think up. This also provides an introduction to a list-based data type.
 
+For binary search, first sort the elements in the array. Then split it in half. if the value matches, return the position. if it doesn't, then search in the chunk before or after that based on if the value is less than or greater than. 
+
 #### Using Standard Libraries
 
 Build a program that uses 3 standard libraries that haven't been used before. This forces me to learn some of the built-in libraries provided by the language. Repeat this several times, always using a set of 3 different libraries. The program doesn't have to be usable, so it could be some interesting output.
+
+The library reference is here: http://golang.org/pkg/
 
 #### Use a third-party library
 
