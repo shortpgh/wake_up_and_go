@@ -1,28 +1,24 @@
 // one is my first implementation of a binary search method in go.
 // to run;
 // 	go test github.com/shortpgh/binsearch &> out
-// 
+//
 // make sure your gopath is set appropriately before trying to run
 // 	export GOPATH=$HOME/Projects/wake_up_and_go
 package binsearch
 
 func Search(list []int, find int) int {
 	curlist := list
-	var nextpos int
-	modifier := 0
-	for len(curlist) > 1 {
-		nextpos = len(curlist) / 2
-		if find == curlist[nextpos] {
-			return nextpos + modifier
+	low, high := 0, len(list)-1
+	var mid int
+	for low <= high {
+		mid = (high + low) / 2
+		if find == curlist[mid] {
+			return mid
 		}
-		if find > curlist[nextpos] {
-			newlist := curlist[nextpos:]
-			modifier += len(curlist) - len(newlist)
-			curlist = newlist
+		if find > curlist[mid] {
+			low = mid + 1
 		} else {
-			newlist := curlist[:nextpos]
-			modifier = len(curlist) - len(newlist)
-			curlist = newlist
+			high = mid - 1
 		}
 	}
 	return 100
