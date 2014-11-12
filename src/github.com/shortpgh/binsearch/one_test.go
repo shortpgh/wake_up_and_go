@@ -2,7 +2,6 @@
 package binsearch
 
 import "testing"
-import "fmt"
 
 func TestSearch(t *testing.T) {
 	list := []int{2, 3, 5, 6, 7, 11, 13}
@@ -19,7 +18,6 @@ func TestSearch(t *testing.T) {
 }
 
 func TrySearch(t *testing.T, list []int, in int, out int) {
-	fmt.Println(in)
 	if result := Search(list, in); result != out {
 		t.Errorf("Search(%v) = %v, want %v", in, result, out)
 	}
